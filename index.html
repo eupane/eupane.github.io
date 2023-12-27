@@ -1,216 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venda seu carro</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>hDC Host</title>
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <h3>Cadastre seu veículo para vender mais rápido!</h3>
-      </div>
-      <div class="form-container">
-        <div class="form-header">
-          <p>Formulário</p>
+        <div class="navbar-container">
+            <nav>
+                <a href="#">
+                    <img src="img/hdchostlogo.png" alt="hDC Host" class="logo">
+                </a>
+                <ul class="navbar-items">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#prices">Preços</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" class="default-btn">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="form-body">
-          <h1 class="form-title">Venda fácil seu carro!</h1>
-          <p>
-            Descreva as características e marque os opcionais que ele possui
-          </p>
-          <form>
-            <div class="box-input">
-              <label for="title"
-                >Título do anúncio <span class="required-field">*</span></label
-              >
-              <input
-                type="text"
-                name="title"
-                id="title"
-                class="block"
-                placeholder="Um título para anunciar seu carro"
-                minlength="1"
-                maxlength="30"
-                required
-              />
+        <main>
+            <div class="main-banner" id="home">
+                <h1>hDC Host</h1>
+                <p>Os melhores serviços para projetos de todos os tamanhos!</p>
             </div>
-            <div class="box-input">
-              <label for="price"
-                >Preço <span class="required-field">*</span></label
-              >
-              <input
-                type="number"
-                name="price"
-                id="price"
-                class="block"
-                placeholder="Defina o preço"
-                required
-              />
-            </div>
-            <div class="box-input">
-              <label for="description"
-                >Descrição <span class="required-field">*</span></label
-              >
-              <textarea
-                name="description"
-                id="description"
-                class="block"
-                placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão"
-              ></textarea>
-            </div>
-            <div class="box-input">
-              <label for="brand"
-                >Marca <span class="required-field">*</span></label
-              >
-              <input
-                type="text"
-                name="brand"
-                id="brand"
-                class="block"
-                placeholder="Digite a marca do veículo"
-                required
-              />
-            </div>
-            <div class="box-input">
-              <label for="model"
-                >Modelo <span class="required-field">*</span></label
-              >
-              <input
-                type="text"
-                name="model"
-                id="model"
-                class="block"
-                placeholder="Digite o modelo do veículo"
-                required
-              />
-            </div>
-            <div class="box-input">
-              <label for="mileage"
-                >Kilometragem <span class="required-field">*</span></label
-              >
-              <input
-                type="number"
-                name="mileage"
-                id="mileage"
-                class="block"
-                placeholder="Digite a kilometragem do veículo"
-                required
-              />
-            </div>
-            <div class="box-input">
-              <label for="purchase_date"
-                >Data de compra <span class="required-field">*</span></label
-              >
-              <input
-                type="date"
-                name="purchase_date"
-                id="purchase_date"
-                class="block"
-                required
-              />
-            </div>
-            <div class="box-input">
-              <p>Tipo de câmbio: <span class="required-field">*</span></p>
-              <input type="radio" id="manual" name="gear" />
-              <label for="manual">Manual</label>
-              <input type="radio" id="auto" name="gear" />
-              <label for="auto">Automático</label>
-            </div>
-            <div class="optional-box">
-              <p>Opcionais</p>
-              <ul class="optional-list">
-                <li>
-                  <input
-                    type="checkbox"
-                    id="airbag"
-                    name="optional[]"
-                    value="airbag"
-                  />
-                  <label for="airbag">Airbag</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="alarm"
-                    name="optional[]"
-                    value="alarm"
-                  />
-                  <label for="alarm">Alarme</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="ac" name="optional[]" value="ac" />
-                  <label for="ac">Ar Condicionado</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="reverse_camera"
-                    name="optional[]"
-                    value="reverse_camera"
-                  />
-                  <label for="reverse_camera">Câmera de Ré</label>
-                </li>
-              </ul>
-            </div>
-            <div class="optional-box">
-              <ul class="optional-list">
-                <li>
-                  <input
-                    type="checkbox"
-                    id="lane_assist"
-                    name="optional[]"
-                    value="lane_assist"
-                  />
-                  <label for="lane_assist">Assistente de Pista</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="keyless"
-                    name="optional[]"
-                    value="keyless"
-                  />
-                  <label for="keyless">Partida Keyless</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="smartphone"
-                    name="optional[]"
-                    value="smartphone"
-                  />
-                  <label for="smartphone">Integração com Celular</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="leather_seat"
-                    name="optional[]"
-                    value="leather_seat"
-                  />
-                  <label for="leather_seat">Banco de Couro</label>
-                </li>
-              </ul>
-            </div>
-            <div class="box-input">
-              <p>Fotos do carro: <span class="required-field">*</span></p>
-              <input
-                type="file"
-                multiple
-                accept="image/png, image/jpg"
-                id="images"
-                name="images"
-                required
-              />
-            </div>
-            <input type="submit" value="Enviar" class="btn-submit"/>
-            <input type="reset" value="Resetar" class="btn-reset">
-          </form>
-        </div>
-      </div>
+            <section class="services-container">
+                <ul>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Segurança</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, natus mollitia. Aut accusamus minima maiores possimus, voluptas blanditiis error! Harum facilis optio fugit id et laborum, fugiat in assumenda laboriosam!</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Performance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, natus mollitia. Aut accusamus minima maiores possimus, voluptas blanditiis error! Harum facilis optio fugit id et laborum, fugiat in assumenda laboriosam!</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <h3>Suporte 24/7</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, natus mollitia. Aut accusamus minima maiores possimus, voluptas blanditiis error! Harum facilis optio fugit id et laborum, fugiat in assumenda laboriosam!</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="pricing-container" id="prices">
+                <h2>Planos e Preços</h2>
+                <p>Selecione o plano que atende as suas necessidades</p>
+                <div class="plans-container">
+                  <div class="plan">
+                    <ul>
+                      <li class="price">R$15/mês</li>
+                      <li class="plan-name">Básico</li>
+                      <li>2GB de espaço</li>
+                      <li>1 Subdomínios</li>
+                      <li>25 contas de e-mail</li>
+                      <li>C-panel</li>
+                      <li>Suporte 24/7</li>
+                      <li class="plan-btn">Saber mais</li>
+                    </ul>
+                  </div>
+                  <div class="plan">
+                    <ul>
+                      <li class="price">R$30/mês</li>
+                      <li class="plan-name">Dedicado</li>
+                      <li>5GB de espaço</li>
+                      <li>10 Subdomínios</li>
+                      <li>50 contas de e-mail</li>
+                      <li>C-panel</li>
+                      <li>Suporte 24/7</li>
+                      <li class="plan-btn">Saber mais</li>
+                    </ul>
+                  </div>
+                  <div class="plan">
+                    <ul>
+                      <li class="price recommended">R$50/mês</li>
+                      <li class="plan-name">Dedicado Plus</li>
+                      <li>10GB de espaço</li>
+                      <li>10 Subdomínios</li>
+                      <li>100 contas de e-mail</li>
+                      <li>C-panel</li>
+                      <li>Suporte 24/7</li>
+                      <li class="plan-btn recommended">Saber mais</li>
+                    </ul>
+                  </div>
+                  <div class="plan">
+                    <ul>
+                      <li class="price">R$100/mês</li>
+                      <li class="plan-name">Cloud</li>
+                      <li>20GB de espaço</li>
+                      <li>20 Subdomínios</li>
+                      <li>200 contas de e-mail</li>
+                      <li>C-panel</li>
+                      <li>Suporte 24/7</li>
+                      <li class="plan-btn">Saber mais</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section class="searchdomain-container">
+                <h2>Qual domínio você quer para o seu site?</h2>
+                <p>Verifique se o dominio está disponível</p>
+                <form>
+                  <input type="text" name="domain" id="domain" placeholder="Digite o domínio desejado">
+                  <input type="submit" value="Procurar Domínio">
+                </form>
+              </section>
+              <section class="contact-container" id="contact">
+                <h2>Mande uma mensagem</h2>
+                <p>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</p>
+                <form>
+                  <input type="text" name="name" id="name" placeholder="Seu nome">
+                  <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                  <textarea name="message" id="message" placeholder="Descreva o que você precisa ou o seu projeto.."></textarea>
+                  <input type="submit" value="Enviar">
+                </form>
+              </section>
+        </main>
+        <footer>
+          <p>hDC Host @ 2024</p>
+        </footer>
     </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
