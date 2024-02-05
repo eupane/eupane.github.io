@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Khand', sans-serif;
+  color: #E0E1DD;
+  user-select: none;
+}
+
+body {
+  background: #020202;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background-color: #050505;
+  width: 99%;
+  height: 98%;
+  border: 2px solid #320d50;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#ico1 {
+  color: #9E34F5;
+  font-size: 300px;
+}
+
+.main-container h1 {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.main-container span {
+  color: #9E34F5;
+}
+
+.main-container p {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.main-container a {
+  margin-top: 10px;
+  background-color: #9E34F5;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px transparent;
+  transition: 0.3s;
+}
+
+.main-container a:hover {
+  background-color: transparent;
+  border: 2px solid #9E34F5;
+  box-shadow: 0 0 10px #9E34F5;
+}
+
+@media screen and (max-width: 500px) {
+  #ico1 {font-size: 240px;}
+  .main-container h1 {font-size: 50px;} 
+  .main-container p {font-size: 25px;}
+}
+
+@media screen and (max-width: 400px) {
+  #ico1 {font-size: 220px;}
+  .main-container h1 {font-size: 45px;} 
+  .main-container p {font-size: 25px;}
+}
+
+@media screen and (max-width: 375px) {
+  #ico1 {font-size: 220px;}
+  .main-container h1 {font-size: 35px;} 
+  .main-container p {font-size: 20px;}
+}
