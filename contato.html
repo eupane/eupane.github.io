@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+      <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>eupane | Contato</title>
+            <!-- Links -->
+            <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous"/>
+            <style>
+              /* @Import's */
+              @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); /* font-family: "Kalam", cursive; */
+              @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&display=swap'); /* font-family: "Josefin Sans", sans-serif; */
+
+              /* General Styles */
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                user-select: none;
+                cursor: default;
+                transition: width 0.2s ease-in-out; 
+              }
+
+              /* Body Styles */
+              body {
+                background: #070922;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+              }
+
+              .header-container {
+                background: #0A0E35;
+                border: 2px solid #0E1449;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              }
+
+              .header-container h1 {
+                color: #D0DBFF;
+                font-size: 2.5rem;
+                font-family: "Kalam", cursive;
+                font-weight: 500;   
+              }
+              .main-container {
+                background: #0A0E35;
+                border: 2px solid #0E1449;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+              }
+
+              .contact-container {
+                color: #D0DBFF;
+                font-family: "Josefin Sans", sans-serif;
+                text-align: center;
+              }
+
+              .contact-container h2 {
+                font-size: 36px;
+                margin: 10px;
+              }
+
+              .contact-container p {
+                font-size: 20px;
+                margin-bottom: 40px;
+              }
+
+              .contact-container br {
+                content: ' ';
+                display: flex;
+                padding-bottom: 5px;
+              }
+
+              .contact-container a {
+                text-decoration: none;
+                cursor: pointer;
+                color: #6788ff;
+              }
+
+              .contact-container input,
+              .contact-container textarea {
+                font-family: "Josefin Sans", sans-serif;
+                color: #D0DBFF;
+                background: #070922;
+                width: 200px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 2px solid #253674;
+                outline: none;
+                margin: 0 10px 20px;
+                transition: 0.3s ease-in-out;
+              }
+
+              .contact-container input:hover,
+              .contact-container textarea:hover {
+                transform: scale(1.05);
+                border: 2px solid #6788ff;
+                box-shadow: 0 0 10px #6788ff;
+              }
+
+              .contact-container input::placeholder,
+              .contact-container textarea::placeholder {
+                color: #D0DBFF;
+              }
+
+
+              .contact-container textarea {
+                display: block;
+                margin: 0 auto 20px;
+                width: 470px;
+                height: 150px;
+              }
+
+              .contact-container input[type="submit"] {
+                display: block;
+                margin: 0 auto;
+                background-color: #6788ff;
+                border: none;
+                color: #D0DBFF;
+                cursor: pointer;
+              }
+
+              .home-container a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #D0DBFF;
+                background: #070922;
+                border: 1px solid #253674;
+                border-radius: 5px;
+                font-size: 1rem;
+                width: 60px;
+                height: 30px;
+                text-decoration: none;
+                margin: 10px 0;
+                transition: 0.3s ease-in-out;
+              }
+
+              .home-container a:hover {
+                transform: scale(1.05);
+                border: 1px solid #6788ff;
+                box-shadow: 0 0 5px #6788ff;
+              }
+
+              @media screen and (max-width: 768px) {
+                .contact-container {
+                  padding: 0 10px;
+                }
+
+                .contact-container input,
+                .contact-container textarea {
+                  width: 100%;
+                  margin: 10px 0;
+                }
+
+                .home-container a{
+                  width: 120px;
+                }
+              }
+            </style>
+        </head>
+        <!-- Body -->
+        <body>
+            <div class="header-container">
+              <h1 class="header-title">Contato</h1>
+            </div>
+            <div class="main-container">
+                <div class="contact-container">
+                  <h2>Mande uma mensagem</h2>
+                  <p>
+                    Envie a sua mensagem, e ficarei feliz em responder assim que possível.
+                    <br>
+                    Se preferir, pode entrar em contato através do meu perfil no Instagram: <a href="https://www.instagram.com/eupane09" target="_blank">@eupane09</a>
+                  </p>
+                  <form>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    <textarea name="message" id="message" placeholder="Descreva o que você precisa ou o seu projeto.."></textarea>
+                    <input type="submit" value="Enviar">
+                  </form>
+                </div>
+                <div class="home-container">
+                  <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+            </div>
+        </body>
+    </html>

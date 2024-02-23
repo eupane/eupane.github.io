@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>eupane | 503</title>
+      <!-- Links -->
+      <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous"/>
+      <!-- Style -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&display=swap');
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Khand", sans-serif;
+          color: #D0DBFF;
+          user-select: none;
+        }
+
+        body {
+          background: #070922;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .main-container {
+          background-color: #0A0E35;
+          width: 99%;
+          height: 98%;
+          border: 2px solid #0E1449;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        #ico1 {
+          color: #6788ff;
+          font-size: 300px;
+        }
+
+        .main-container h1 {
+          font-size: 60px;
+          font-weight: 400;
+          line-height: 1.1;
+        }
+
+        .main-container span {
+          color: #6788ff;
+        }
+
+        .main-container p {
+          font-size: 30px;
+          font-weight: 300;
+          line-height: 1.1;
+        }
+
+        .main-container a {
+          margin-top: 10px;
+          background-color: #070922;
+          width: 100px;
+          height: 30px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          font-weight: 500;
+          border: 2px solid transparent;
+          box-shadow: 0 0 10px transparent;
+          transition: 0.3s;
+        }
+
+        .main-container a:hover {
+          background-color: transparent;
+          border: 2px solid #6788ff;
+          box-shadow: 0 0 10px #6788ff;
+        }
+
+        @media screen and (max-width: 500px) {
+          #ico1 {font-size: 240px;}
+          .main-container h1 {font-size: 50px;} 
+          .main-container p {font-size: 25px;}
+        }
+
+        @media screen and (max-width: 400px) {
+          #ico1 {font-size: 220px;}
+          .main-container h1 {font-size: 45px;} 
+          .main-container p {font-size: 25px;}
+        }
+
+        @media screen and (max-width: 375px) {
+          #ico1 {font-size: 220px;}
+          .main-container h1 {font-size: 35px;} 
+          .main-container p {font-size: 20px;}
+        }
+    </style>
+    </head>
+    <!-- Body -->
+    <body>
+      <div class="main-container">
+        <i id="ico1" class="fa-solid fa-triangle-exclamation"></i>
+        <h1>Deu <span>pane</span> no sistema!</h1>
+        <p>
+          O site está temporariamente indisponível. 
+          <br>
+          Por favor, tente novamente mais tarde.
+        </p>
+        <a href="/index">
+          <i id="ico2" class="fa-solid fa-house"></i></a>
+      </div>
+    </body>
+</html> 
