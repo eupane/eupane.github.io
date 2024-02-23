@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/zDNSjO8.jpeg" alt="Logo"></p>
+<p align="center"><img src="https://i.imgur.com/zDNSjO8.jpeg" alt="eupane Logo"></p>
 
 ## Meu Repositório de Projetos 🚀
 

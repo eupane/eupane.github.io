@@ -1,3 +1,4 @@
+// @eupane
 document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.getElementById('search-input');
   const projects = document.querySelectorAll('.project');
